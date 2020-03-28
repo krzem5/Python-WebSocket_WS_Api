@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WebSocket Wireless keyboard</title>
+		<script type="text/javascript">
+			import("./api/client.js").then(function(m){
+				window.Client=m.Client
+				init()
+			})
+			var client
+			function init(){
+				client=new window.Client(["192.168.178.56","8080"])
+			}
+		</script>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+			html {
+				position: fixed;
+			}
+			body {
+				position: fixed;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+			body * {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	</head>
+	<body>
+	</body>
+</html>
