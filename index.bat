@@ -1,1 +1,4 @@
-C:\WINDOWS\explorer.exe /select,C:\K\Coding\projects\WebSocket-WS_API\api
+@echo off
+cls
+start /min cmd /c python webSocket.py
+start cmd /k python other.py
