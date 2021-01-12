@@ -1,4 +1,4 @@
 @echo off
 cls
-start /min cmd /c python webSocket.py
-start cmd /k python other.py
+start /min cmd /c python src/webSocket.py
+start cmd /k python src/other.py
