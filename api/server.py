@@ -10,10 +10,8 @@ class _Client(WebSocket):
 		thr.start()
 	def handleConnected(self):
 		self.WS.on_client_connect(self)
-		pass
 	def handleClose(self):
 		self.WS.on_client_close(self)
-		pass
 	def process_message(self,*args):
 		msg=self.data
 		self.sendMessage("null")

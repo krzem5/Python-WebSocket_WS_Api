@@ -21,7 +21,9 @@ export class Client{
 		e.preventDefault()
 	}
 	_m(m){
-		if (m=="null"):return
+		if (m=="null"){
+			return
+		}
 		var k=m.split(":")[0]
 		var v=m.substring(k.length+1)
 		if (!Object.keys(this.packets).includes(k)){
