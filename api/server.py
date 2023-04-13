@@ -56,7 +56,6 @@ class WS:
 
 
 
-
 	def on_client_connect(self,c):
 		pass
 	def on_client_close(self,c):
